@@ -1,0 +1,96 @@
+/* pages/allrepair/allrepair.wxss */
+page{
+  background-color: 	#F5F5F5;
+}
+
+.filter{
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.filter-section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.filter-section image{
+  margin-top: 6px;
+  margin-left: 10rpx;
+  margin-right: 5rpx;
+  height: 20px;
+  width: 20px;
+}
+
+.block-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.block-title text{
+  margin-left: 30rpx;
+  font-weight: bold;
+}
+
+.container{
+  margin: 10px 20rpx 10px 20rpx;
+  padding: 10px  0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+
+.section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  margin-left: 10rpx;
+  margin-right: 40rpx;
+  height: 30px;
+  width: 30px;
+}
+
+.section-title{
+  width: 220rpx;
+  margin-right: 40rpx;
+  height: 30px;
+  line-height: 30px;
+}
+
+text{
+  height: 30px;
+  line-height: 30px;
+}
+
+button{
+  height: 30px;
+  line-height: 30px;
+  background-color: 	#1E90FF;
+  color: white;
+}
+
+.status{
+  color: #FF0000;
+}
+
+.detail{
+  margin-right: 10rpx;
+  width: 150rpx;
+}
+
+.apponitEngineer{
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  width: 240rpx;
+}

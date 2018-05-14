@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/client/client",
+    "pages/client/repair/repair",
+    "pages/client/myrepair/myrepair",
+    "pages/client/evaluation/evaluation",
+    "pages/client/complaint/complaint"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "MOEMIL",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/client/client",
+        "text": "主页",
+        "iconPath": "images/icon/tabBar/主页.png",
+        "selectedIconPath": "images/icon/tabBar/主页选中.png"
+      },
+      {
+        "pagePath": "pages/client/repair/repair",
+        "text": "提交报修",
+        "iconPath": "images/icon/tabBar/repair.png",
+        "selectedIconPath": "images/icon/tabBar/repair-selected.png"
+      },
+      {
+        "pagePath": "pages/client/myrepair/myrepair",
+        "text": "报修中",
+        "iconPath": "images/icon/tabBar/我的报修.png",
+        "selectedIconPath": "images/icon/tabBar/我的报修选中.png"
+      },
+      {
+        "pagePath": "pages/client/evaluation/evaluation",
+        "text": "服务评价",
+        "iconPath": "images/icon/tabBar/服务评价.png",
+        "selectedIconPath": "images/icon/tabBar/服务评价选中.png"
+      }
+    ]
+  }
+}

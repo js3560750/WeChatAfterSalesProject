@@ -1,0 +1,5 @@
+/* pages/aftersales/aftersales.wxss */
+/* pages/client/client.wxss */
+.usermotto {
+  margin-top: 200px;
+}

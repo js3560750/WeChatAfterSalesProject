@@ -1,0 +1,46 @@
+<!--pages/filter/filter.wxml-->
+<view class='container'>
+
+  <form bindsubmit="formSubmit" >
+  <view class='section'>
+    <view class='section-title'>
+      <image src='/images/icon/repair/circle.png'></image>
+      <text>工单状态</text>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        点我选择：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class='section'>
+    <view class='section-title'>
+      <image src='/images/icon/repair/circle.png'></image>
+      <text>起始时间</text>
+    </view>
+    <picker mode="date" value="{{startDate}}" start="2018-01-01" end="2027-09-01" bindchange="bindStartDateChange">
+    <view class="picker">
+      点我选择: {{startDate}}
+    </view>
+  </picker>
+  </view>
+
+  <view class='section'>
+    <view class='section-title'>
+      <image src='/images/icon/repair/circle.png'></image>
+      <text>结束时间</text>
+    </view>
+    <picker mode="date" value="{{endDate}}" start="2018-01-01" end="2027-09-01" bindchange="bindEndDateChange">
+    <view class="picker">
+      点我选择: {{endDate}}
+    </view>
+  </picker>
+  </view>
+
+  <view class="btn-area">
+      <button id='submitButton' formType="submit">确定</button>
+    </view>
+  </form>
+
+</view>

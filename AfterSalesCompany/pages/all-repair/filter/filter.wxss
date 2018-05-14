@@ -1,0 +1,55 @@
+/* pages/filter/filter.wxss */
+page{
+  background-color: 	#F5F5F5;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20rpx 10px 20rpx;
+  padding: 0;
+  
+}
+
+form{
+  width: 100%;
+}
+
+.section{
+  width: 100%;
+  margin: 10rpx 0 20rpx 0rpx;
+  background-color:white;
+}
+
+.section-title{
+  display: flex;
+  flex-direction: row;
+  line-height: 40px
+}
+
+.section-title image{
+  height: 20px;
+  width:20px;
+  margin-top:11px;
+  margin-left:3rpx;
+  margin-right:3rpx;
+}
+
+.section-title text{
+  height: 35px;
+}
+
+picker{
+  margin-left: 40rpx;
+}
+
+#submitButton{
+  background-color: 	#1E90FF;
+  color: white;
+}
+
+.btn-area{
+  margin-bottom: 10px;
+}

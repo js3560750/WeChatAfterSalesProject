@@ -1,0 +1,101 @@
+<!--pages/finished/installdetail/installdetail.wxml-->
+<view class='container'>
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/productName.png'></image>
+    <text class='section-title'>仪器型号</text>
+    <text class='producModel'>{{orderDetail.productModel}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/productName.png'></image>
+    <text class='section-title'>仪器序列号</text>
+    <text class='serialNumber'>{{orderDetail.serialNumber}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/coding.png'></image>
+    <text class='section-title'>仪器类型</text>
+    <text class='productType'>{{orderDetail.productType}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/num.png'></image>
+    <text class='section-title'>工单号</text>
+    <text class='orderNumber'>{{orderDetail.orderNumber}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/status.png'></image>
+    <text class='section-title'>工单状态</text>
+    <text class='status'>{{orderDetail.status}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/hospital.png'></image>
+    <text class='section-title'>医院名称</text>
+    <text class='hospitalName'>{{orderDetail.hospitalName}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/submitTime.png'></image>
+    <text class='section-title'>医院科室名</text>
+    <text class='hospitalDepartment'>{{orderDetail.hospitalDepartment}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/expectTime.png'></image>
+    <text class='section-title'>医院地址</text>
+    <text class='hospitalAddress'>{{orderDetail.hospitalAddress}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/acceptTime.png'></image>
+    <view class='section-title'>派单时间</view>
+    <text class='orderTime'>{{orderDetail.orderTime}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/estimatedArrivalTime.png'></image>
+    <view class='section-title'>预计到达</view>
+    <text class='estimatedArrivalTime'>{{orderDetail.estimatedArrivalTime}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/arrivalTime.png'></image>
+    <view class='section-title'>实际到达</view>
+    <text class='arrivaledTime'>{{orderDetail.arrivaledTime}}</text>
+  </view>
+
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/endTime.png'></image>
+    <view class='section-title'>完成时间</view>
+    <text class='finishedTime'>{{orderDetail.finishedTime}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/contactName.png'></image>
+    <text class='section-title'>联系人姓名</text>
+    <text class='hospitalContact'>{{orderDetail.hospitalContact}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/engineerTel.png'></image>
+    <text class='section-title'>联系人电话</text>
+    <text class='hospitalTel'>{{orderDetail.hospitalTel}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/engineerName.png'></image>
+    <view class='section-title'>工程师姓名</view>
+    <text class='engineer'>{{orderDetail.engineer}}</text>
+  </view>
+
+  <view class='section'>
+    <image class='icon' src='/images/icon/repair/engineerTel.png'></image>
+    <view class='section-title'>工程师电话</view>
+    <text class='engineerTel'>{{orderDetail.engineerTel}}</text>
+  </view>
+
+
+</view>

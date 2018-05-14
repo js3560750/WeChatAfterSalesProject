@@ -1,0 +1,22 @@
+/* pages/index/index.wxss */
+.section {
+  margin-top: 50px;
+}
+
+.section input{
+  padding-left: 10rpx;
+  height: 40px;
+  margin-top: 10px;
+  border-bottom: 1px solid 	#A9A9A9;
+}
+
+#submitButton{
+  background-color: 	#1E90FF;
+  color: white;
+}
+
+.btn-area{
+  width: 400rpx;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

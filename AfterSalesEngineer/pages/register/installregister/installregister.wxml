@@ -1,0 +1,527 @@
+<!--pages/register/installregister/installregister.wxml-->
+
+<view class='container'>
+  <form bindsubmit="formSubmit">
+
+    <view class='section'>
+      <text>订单号</text>
+      <input name='orderNumber' disabled='true' placeholder='请输入' value='{{order.orderNumber}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>工程师姓名</text>
+      <input name='engineer' value='{{order.engineer}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>工程师电话</text>
+      <input name='engineerTel' value='{{order.engineerTel}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>订单状态</text>
+      <input name='status' value='{{order.status}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院名称</text>
+      <input name='hospitalName' value='{{order.hospitalName}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院科室名称</text>
+      <input name='hospitalDepartment' value='{{order.hospitalDepartment}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院地址</text>
+      <input name='hospitalAddress' value='{{order.hospitalAddress}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院负责人姓名</text>
+      <input name='hospitalContact' value='{{order.hospitalContact}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院负责人电话</text>
+      <input name='hospitalTel' value='{{order.hospitalTel}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器类型</text>
+      <input name='productType' value='{{order.productType}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器型号</text>
+      <input name='productModel' value='{{order.productModel}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器序列号</text>
+      <input name='serialNumber' value='{{order.serialNumber}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>外包装情况</text>
+      <input name='packaging' value='{{order.packaging}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器外观</text>
+      <input name='outAppearance' value='{{order.outAppearance}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>LIS状态</text>
+      <input name='lis' value='{{order.lis}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>IP地址</text>
+      <input name='ip' value='{{order.ip}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>安装状态</text>
+      <input name='installStauts' value='{{order.installStauts}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>零地电压</text>
+      <input name='zeroVoltage' value='{{order.zeroVoltage}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器APP应用版本</text>
+      <input name='appVersion' value='{{order.appVersion}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>主机硬盘</text>
+      <input name='hardDisk' value='{{order.hardDisk}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>电脑系统版本</text>
+      <input name='computerVersion' value='{{order.computerVersion}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>主机CPU</text>
+      <input name='cpu' value='{{order.cpu}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>主机光驱</text>
+      <input name='cd' value='{{order.cd}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>主机运行内存</text>
+      <input name='ram' value='{{order.ram}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器供电电压</text>
+      <input name='supplyVoltage' value='{{order.supplyVoltage}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>电压供电电压</text>
+      <input name='computerVoltage' value='{{order.computerVoltage}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>废液桶</text>
+      <input name='wasteLiquidBucket' value='{{order.wasteLiquidBucket}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>卡仓盒</text>
+      <input name='cardBox' value='{{order.cardBox}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>视频线</text>
+      <input name='videoCable' value='{{order.videoCable}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>稀释液桶</text>
+      <input name='diluentBucket' value='{{order.diluentBucket}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器电源线</text>
+      <input name='instrumentPowerCable' value='{{order.instrumentPowerCable}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>USB接口线</text>
+      <input name='usbCable' value='{{order.usbCable}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>清洗液桶</text>
+      <input name='cleanBucket' value='{{order.cleanBucket}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>电脑主机电源线</text>
+      <input name='computerCable' value='{{order.computerCable}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>合格证</text>
+      <input name='certificate' value='{{order.certificate}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>保养液桶</text>
+      <input name='maintenanceBucket' value='{{order.maintenanceBucket}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>显示器电源线</text>
+      <input name='monitorCable' value='{{order.monitorCable}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器</text>
+      <input name='instrument' value='{{order.instrument}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器操作手册</text>
+      <input name='manual' value='{{order.manual}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>电脑主机</text>
+      <input name='computer' value='{{order.computer}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>显示器</text>
+      <input name='monitor' value='{{order.monitor}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>标本盒支架</text>
+      <input name='sampleHolder' value='{{order.sampleHolder}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>鼠标</text>
+      <input name='mouse' value='{{order.mouse}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>键盘</text>
+      <input name='keyboard' value='{{order.keyboard}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>跟机耗材</text>
+      <input name='supplies' value='{{order.supplies}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>硅胶管</text>
+      <input name='siliconeTube' value='{{order.siliconeTube}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>是否DOA</text>
+      <input name='whetherDoa' value='{{order.whetherDoa}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>DOA故障描述信息</text>
+      <input name='doaInformation' value='{{order.doaInformation}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>硬件到位</text>
+      <input name='hardware' value='{{order.hardware}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>硬件未到位原因</text>
+      <input name='hardwareReason' value='{{order.hardwareReason}}' placeholder='请输入'></input>
+    </view>
+
+     <view class='section'>
+      <text>老师能否操作</text>
+      <input name='teacherOperator' value='{{order.teacherOperator}}' placeholder='请输入'></input>
+    </view>
+
+     <view class='section'>
+      <text>老师不能操作原因</text>
+      <input name='teacherOperatorReason' value='{{order.teacherOperatorReason}}' placeholder='请输入'></input>
+    </view>
+
+     <view class='section'>
+      <text>运行情况</text>
+      <input name='operationCondition' value='{{order.operationCondition}}' placeholder='请输入'></input>
+    </view>
+
+     <view class='section'>
+      <text>不能运行原因</text>
+      <input name='operationConditionReason' value='{{order.operationConditionReason}}' placeholder='请输入'></input>
+    </view>
+
+     <view class='section'>
+      <text>客户意见</text>
+      <input name='clientFeedback' value='{{order.clientFeedback}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>邮编</text>
+      <input name='zipCode' value='{{order.zipCode}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>备注</text>
+      <input name='remarks' value='{{order.remarks}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>是否退货</text>
+      <radio-group name='isReturnPurchase'>
+        <radio class="radio" value="1">是</radio>
+        <radio class="radio" value="0" checked='true'>否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>电脑显示器情况是否正常</text>
+      <radio-group name='isMonitor'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>电脑主机状态是否正常</text>
+      <radio-group name='isComputer'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>返回状态是否正常</text>
+      <radio-group name='isReturnStatus'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>显微镜状态是否正常</text>
+      <radio-group name='isMicroscope'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>液路系统状态是否正常</text>
+      <radio-group name='isLiquid'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>夹管阀状态是否正常</text>
+      <radio-group name='isPinch'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>镜检自动识别状态是否正常</text>
+      <radio-group name='isAutoIdentify'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>步进电机状态是否正常</text>
+      <radio-group name='isStepMotor'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>微动开关状态是否正常</text>
+      <radio-group name='isMicroSwitch'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>金标卡自动识别状态是否正常</text>
+      <radio-group name='isGold'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>直流电机状态是否正常</text>
+      <radio-group name='isDcMotor'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>光耦状态是否正常</text>
+      <radio-group name='isOpto'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>粪便性状识别状态是否正常</text>
+      <radio-group name='isStoolTrait'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>蠕动泵状态是否正常</text>
+      <radio-group name='isPeristalticPump'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>柱塞泵是否正常</text>
+      <radio-group name='isPistonPump'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>粪便颜色识别状态是否正常</text>
+      <radio-group name='isStoolColor'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>自动进样状态是否正常</text>
+      <radio-group name='isImportSample'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>自动出样状态是否正常</text>
+      <radio-group name='isExposeSample'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>交叉污染状态是否正常</text>
+      <radio-group name='isCrossPollution'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>计数池状态是否正常</text>
+      <radio-group name='isCountingPool'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>仪器开关状态是否正常</text>
+      <radio-group name='isSwitch'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>is_mix_system</text>
+      <radio-group name='isMixSystem'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>交流电源盒状态是否正常</text>
+      <radio-group name='isPowerBox'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>D15开关状态是否正常</text>
+      <radio-group name='isD15'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>电气自动化系统状态是否正常</text>
+      <radio-group name='isElectricAuto'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>电路系统状态是否正常</text>
+      <radio-group name='isElectircCircuit'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>降压系统状态是否正常</text>
+      <radio-group name='isBuck'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+
+
+
+    <view class='section'>
+      <text>数据库编号</text>
+      <input name='id' disabled='true' value='{{order.id}}' ></input>
+    </view>
+
+    <view class="btn-area">
+      <button id='submitButton' formType="submit">提交</button>
+    </view>
+  </form>
+</view>

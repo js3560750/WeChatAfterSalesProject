@@ -1,0 +1,6 @@
+<!--pages/sendOrder/sendOrder.wxml-->
+<view class='container'>
+  <button catchtap='clickRepair'>维修工单</button>
+  <button catchtap='clickInstall'>安装工单</button>
+  <button catchtap='clickMaintain'>保养工单</button>
+</view>

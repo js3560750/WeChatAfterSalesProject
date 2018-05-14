@@ -1,0 +1,161 @@
+<!--pages/register/repairregister/repairregister.wxml-->
+<view class='container'>
+
+  <form bindsubmit="formSubmit">
+
+    <view class='section'>
+      <text>订单号</text>
+      <input name='orderNumber'  disabled='true' value='{{order.orderNumber}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院名称</text>
+      <input name='hospitalName' placeholder='请输入' value='{{order.hospitalName}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>科室负责人姓名</text>
+      <input name='hospitalContact' placeholder='请输入' value='{{order.hospitalContact}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>科室负责人联系电话</text>
+      <input name='hospitalTel' placeholder='请输入' value='{{order.hospitalTel}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>产品型号</text>
+      <input name='productModel' placeholder='请输入' value='{{order.productModel}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>产品名称</text>
+      <input name='productName' placeholder='请输入' value='{{order.productName}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>产品序列号</text>
+      <input name='serialNumber' placeholder='请输入' value='{{order.serialNumber}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>产品版本</text>
+      <input name='productVersion' placeholder='请输入' value='{{order.productVersion}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>是否过保</text>
+      <radio-group name='isInsuranced'>
+        <radio class="radio" value="1">是</radio>
+        <radio class="radio" value="0" checked='true'>否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>是否返厂</text>
+      <radio-group name='isReturnFactory'>
+        <radio class="radio" value="1">是</radio>
+        <radio class="radio" value="0" checked='true'>否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>是否更换新机过保</text>
+      <radio-group name='isReplaceProduct'>
+        <radio class="radio" value="1">是</radio>
+        <radio class="radio" value="0" checked='true'>否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>月表标本量总数</text>
+      <input name='monthSampleCount' placeholder='请输入，重要！' type='number'></input>
+    </view>
+
+    <view class='section'>
+      <text>日表标本量总数</text>
+      <input name='daySampleCount' placeholder='请输入，重要！' type='number'></input>
+    </view>
+
+    <view class='section'>
+      <text>标本盒种类</text>
+      <input name='sampleBoxType' placeholder='请输入' value='{{order.sampleBoxType}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>试剂种类</text>
+      <input name='reagentType' placeholder='请输入' value='{{order.reagentType}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>故障种类</text>
+      <radio-group name='errorType'>
+        <radio class="radio" value="电子">电子</radio>
+        <radio class="radio" value="软件">软件</radio>
+        <radio class="radio" value="机构">机构</radio>
+        <radio class="radio" value="拍照">拍照</radio>
+        <radio class="radio" value="系统">系统</radio>
+        <radio class="radio" value="自动识别">自动识别</radio>
+        <radio class="radio" value="其他" checked='true'>其他</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>故障现象</text>
+      <input name='phenomenon' placeholder='请输入，重要！' value='{{order.phenomenon}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>故障原因</text>
+      <input name='reason' placeholder='请输入，重要！' value='{{order.reason}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>解决方法</text>
+      <input name='solution' placeholder='请输入，重要！' value='{{order.solution}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>更换备件名称及编号</text>
+      <input name='replaceNameCode' placeholder='请输入' value='{{order.replaceNameCode}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>原备件名称及编号</text>
+      <input name='originalNameCode' placeholder='请输入' value='{{order.originalNameCode}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器状况</text>
+      <input name='productCondition' placeholder='请输入' value='{{order.productCondition}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>备注</text>
+      <input name='orderRemarks' placeholder='请输入' value='{{order.orderRemarks}}'></input>
+    </view>
+
+
+
+
+  <!--下面都是已有数据，属性设置为不能更改-->
+    <view class='section'>
+      <text>数据库编号</text>
+      <input name='id' disabled='true'   value='{{order.id}}'></input>
+    </view>
+
+    <view class="btn-area">
+      <button id='submitButton' formType="submit">提交</button>
+    </view>
+
+    
+
+
+
+
+      
+
+  </form>
+
+
+</view>

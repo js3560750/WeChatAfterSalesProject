@@ -1,0 +1,26 @@
+<view class="container">
+  
+  
+  <form bindsubmit='formSubmit'>
+    
+
+    <view class="section">
+      <view class='section-title'>
+        <text>用户名（手机号）</text>
+      </view>
+      <input name='account' placeholder='请输入您的手机号'></input>
+    </view>
+
+    <view class="section">
+      <view class='section-title'>
+        <text>密码</text>
+      </view>
+      <!--表单要获得input的值，必须给input一个name-->
+      <input name='password' placeholder='请输入密码'></input>
+    </view>
+
+    <view class="btn-area">
+      <button id='submitButton' formType="submit">登录</button>
+    </view>
+  </form>
+</view>

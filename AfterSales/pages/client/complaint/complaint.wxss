@@ -1,0 +1,47 @@
+/* pages/client/complaint/complaint.wxss */
+page{
+  background-color: 	#F5F5F5;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20rpx 10px 20rpx;
+  padding: 0;
+}
+
+.section{
+  margin: 10rpx 0 20rpx 0rpx;
+  background-color:white;
+  padding: 10px 0;
+}
+
+form{
+  width:100%;
+}
+
+.section-title{
+  margin-left: 15rpx;
+}
+
+#productName{
+  margin-left: 15rpx;
+}
+
+textarea{
+  width: 100%;
+  margin-top: 10px;
+  height: 250px;
+  margin-left: 15rpx;
+}
+
+button{
+  background-color: 	#1E90FF;
+  color: white;
+}
+
+.btn-area{
+  bottom: 0;
+  margin-bottom: 20px;
+}

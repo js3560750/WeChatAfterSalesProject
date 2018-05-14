@@ -1,0 +1,41 @@
+/* pages/client/myrepair/myrepair.wxss */
+page{
+  background-color: #F5F5F5;
+}
+
+.container{
+  margin: 10px 20rpx 10px 20rpx;
+  padding: 10px  0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+
+.section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  margin-left: 10rpx;
+  margin-right: 40rpx;
+  height: 30px;
+  width: 30px;
+}
+
+.section-title{
+  width: 230rpx;
+  margin-right: 40rpx;
+  height: 30px;
+  line-height: 30px;
+}
+
+text{
+  margin-left: 0px;
+  height: 30px;
+  line-height: 30px;
+}
+
+

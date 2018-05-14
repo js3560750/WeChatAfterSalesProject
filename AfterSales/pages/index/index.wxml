@@ -1,0 +1,16 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+
+<form bindsubmit='formSubmit'>
+  <view class="section">
+    <view class='section-title'>
+      <text>手机号</text>
+    </view>
+    <input name='openid' placeholder='请输入手机号直接登录' type='number'></input>
+  </view>
+
+  <view class="btn-area">
+    <button id='submitButton'  formType="submit">登录</button>
+  </view>
+</form>
+</view>

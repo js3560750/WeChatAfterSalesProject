@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/unfinished/unfinished",
+    "pages/aftersales/aftersales",
+    "pages/finished/finished",
+    "pages/finished/repairdetail/repairdetail",
+    "pages/finished/maintaindetail/maintaindetail",
+    "pages/finished/installdetail/installdetail",
+    "pages/register/repairregister/repairregister",
+    "pages/register/installregister/installregister",
+    "pages/register/maintainregister/maintainregister"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "Moemil",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/aftersales/aftersales",
+        "text": "主页",
+        "iconPath": "images/tabBar/维修主页.png",
+        "selectedIconPath": "images/tabBar/维修主页选中.png"
+      },
+      {
+        "pagePath": "pages/unfinished/unfinished",
+        "text": "未完成工单",
+        "iconPath": "images/tabBar/未完成工单.png",
+        "selectedIconPath": "images/tabBar/未完成工单选中.png"
+      },
+      {
+        "pagePath": "pages/finished/finished",
+        "text": "已完成工单",
+        "iconPath": "images/tabBar/已完成工单.png",
+        "selectedIconPath": "images/tabBar/已完成工单选中.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+<!--pages/client/evaluation/evalutation.wxml-->
+
+  <block wx:for="{{myEvaluation}}" wx:for-item="item" wx:for-index="index">
+
+    <view class='container'>
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/num.png'></image>
+          <view class='section-title'>工单号</view>
+          <text class='orderNumber'>{{item.orderNumber}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/engineerName.png'></image>
+          <view class='section-title'>工程师姓名</view>
+          <text class='engineer'>{{item.engineer}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/engineerTel.png'></image>
+          <view class='section-title'>工程师电话</view>
+          <text class='engineerTel'>{{item.engineerTel}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/submitTime.png'></image>
+          <view class='section-title'>提交时间</view>
+          <text class='applyTime'>{{item.applyTime}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/arrivalTime.png'></image>
+          <view class='section-title'>完成时间</view>
+          <text class='finishedTime'>{{item.finishedTime}}</text>
+        </view>
+
+        <view class='section'>
+          <button wx:if="{{item.serviceRating==null}}" class='evaluation' catchtap='clickEvaluation' data-id='{{item.id}}'>评价</button>
+          <button wx:else class='evaluation' style='background-color:gray'>已评价</button>
+          <button class='complaint' catchtap='clickComplaint' data-id='{{item.id}}' data-engineer='{{item.engineer}}'>投诉</button>
+        </view>
+    </view>
+
+  </block>

@@ -1,0 +1,133 @@
+/* pages/client/repair/repair.wxss */
+page{
+  
+  background-color: 	#F5F5F5;
+  
+}
+
+.scan{
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.scan-left{
+  display: flex;
+  flex-direction: row;
+}
+
+.scan-left image{
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 35px;
+  width: 35px;
+}
+
+.scan-right{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-right: 10rpx;
+}
+
+.scan-right image{
+  height: 30px;
+  width: 30px;
+}
+.scan-right text{
+  font-size: 10px;
+  color: 	#1E90FF;
+}
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20rpx 10px 20rpx;
+  padding: 0;
+  
+}
+
+.section{
+  margin: 10rpx 0 20rpx 0rpx;
+  background-color:white;
+}
+
+.section-title{
+  display: flex;
+  flex-direction: row;
+}
+
+.section-title image{
+  height: 10px;
+  width:10px;
+  margin-top:15px;
+  margin-left:3px;
+  margin-right:3px;
+}
+
+.section-title text{
+  height: 35px;
+}
+
+
+.section-title{
+  line-height: 40px
+}
+
+.section input{
+  height: 40px;
+  background-color: white;
+  margin-left: 16px;
+}
+
+.section textarea{
+  
+  background-color: white;
+  margin-left: 16px;
+}
+
+form{
+  width:100%;
+}
+
+.picker{
+  background-color: white;
+  margin-left: 16px;
+}
+
+#upload-title{
+  margin-left: 16px;
+}
+
+#uploadButton{
+  height: 80px;
+  width: 80px;
+  margin-left: 16px;
+}
+
+.image-info{
+  height: 480rpx;
+  width: 640rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+
+#submitButton{
+  background-color: 	#1E90FF;
+  color: white;
+}
+
+#backButton{
+  background-color: 	#1E90FF;
+  color: white;
+}
+
+.btn-area{
+  margin-bottom: 10px;
+}
+

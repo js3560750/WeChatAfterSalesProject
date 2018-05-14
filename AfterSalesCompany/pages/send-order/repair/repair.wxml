@@ -1,0 +1,90 @@
+<!--pages/send-order/repair/repair.wxml-->
+<view class='container'>
+
+  <form bindsubmit="formSubmit">
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/星号.png'></image>
+        <text>产品名称</text>
+      </view>
+      <input name='productName' placeholder='必填'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <text>产品型号</text>
+      </view>
+      <input name='productModel' placeholder='不知可不填'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <text>产品编号（序列号）</text>
+      </view>
+      <input name='serialNumber' placeholder='不知可不填'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/星号.png'></image>
+        <text>医院名称</text>
+      </view>
+      <input name='hospitalName' placeholder='必填'></input>
+    </view>
+    <!--增加医院地址-->
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/星号.png'></image>
+        <text>联系人姓名</text>
+      </view>
+      <input name='hospitalContact' placeholder='必填'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/星号.png'></image>
+        <text>联系电话</text>
+      </view>
+      <input name='hospitalTel' placeholder='必填' type='number'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/星号.png'></image>
+        <text>上门时间</text>
+      </view>
+      <picker name='expectTime' mode="date" value="{{date}}" start="2018-01-01" end="2030-12-31" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/星号.png'></image>
+        <text>委派工程师</text>
+      </view>
+      <picker name='engineer' bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}">
+        <view class="picker">
+          点我选择工程师：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <text>故障描述</text>
+      </view>
+      <textarea name='hospitalErrorDescribe' placeholder='请输入'></textarea>
+    </view>
+
+
+
+    <view class="btn-area">
+      <button id='submitButton' formType="submit">提交</button>
+    </view>
+  </form>
+
+
+</view>

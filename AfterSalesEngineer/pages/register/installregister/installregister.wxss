@@ -1,0 +1,64 @@
+/* pages/register/installregister/installregister.wxss */
+page{
+  
+  background-color: 	#F5F5F5;
+  
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20rpx 10px 20rpx;
+  padding: 0;
+  
+}
+
+.section{
+  margin: 10rpx 0 20rpx 0rpx;
+  background-color:white;
+}
+
+text{
+  margin-left: 16px;
+  color: 	#1E90FF;
+}
+
+.radio {
+  margin-left: 16px;
+  padding: 5px;
+}
+
+.section input{
+  height: 40px;
+  background-color: white;
+  margin-left: 16px;
+}
+
+.section textarea{
+  
+  background-color: white;
+  margin-left: 16px;
+}
+
+form{
+  width:100%;
+}
+
+.picker{
+  background-color: white;
+  margin-left: 16px;
+}
+
+
+
+
+#submitButton{
+  background-color: 	#1E90FF;
+  color: white;
+}
+
+.btn-area{
+  margin-bottom: 10px;
+}

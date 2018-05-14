@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/send-order/repair/repair",
+    "pages/all-repair/filter/filter",
+    "pages/all-repair/search/search",
+    "pages/all-repair/all-repair",
+    "pages/new-repair/detail/detail",
+    "pages/new-repair/new-repair",
+    "pages/new-repair/appoint-engineer/appoint-engineer",
+    "pages/send-order/send-order",
+    "pages/send-order/install/install",
+    "pages/send-order/maintain/maintain",
+    "pages/all-repair/install-order/install-order",
+    "pages/all-repair/maintain-order/maintain-order",
+    "pages/all-repair/install-order/install-detail/install-detail",
+    "pages/all-repair/install-order/change-install-engineer/change-install-engineer",
+    "pages/all-repair/maintain-order/change-maintain-engineer/change-maintain-engineer",
+    "pages/all-repair/maintain-order/maintain-detail/maintain-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MOEMIL",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/send-order/send-order",
+        "text": "委派工单",
+        "iconPath": "images/icon/tabBar/主页.png",
+        "selectedIconPath": "images/icon/tabBar/主页选中.png"
+      },
+      {
+        "pagePath": "pages/new-repair/new-repair",
+        "text": "客户报修",
+        "iconPath": "images/icon/tabBar/主页.png",
+        "selectedIconPath": "images/icon/tabBar/主页选中.png"
+      },
+      {
+        "pagePath": "pages/all-repair/all-repair",
+        "text": "所有工单",
+        "iconPath": "images/icon/tabBar/repair.png",
+        "selectedIconPath": "images/icon/tabBar/repair-selected.png"
+      }
+    ]
+  }
+}

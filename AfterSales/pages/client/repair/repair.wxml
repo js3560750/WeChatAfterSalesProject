@@ -1,0 +1,107 @@
+<!--pages/client/repair/repair.wxml-->
+<view class='scan'>
+  <view class='scan-left'>
+    <image src='/images/icon/repairContent.png'></image>
+
+  </view>
+  <view class='scan-right' catchtap='clickScan'>
+    <image src='/images/icon/scan.png'></image>
+    <text>扫一扫</text>
+  </view>
+</view>
+
+<view class='container' >
+
+  <form bindsubmit="formSubmit">
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text>产品名称</text>
+      </view>
+      <input name='productName' placeholder='请扫机器二维码' value='{{productName}}'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text>产品型号</text>
+      </view>
+      <input name='productModel' placeholder='请扫机器二维码' value='{{productModel}}'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text>产品编号（序列号）</text>
+      </view>
+      <input name='serialNumber' placeholder='请扫机器二维码' value='{{serialNumber}}'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text>医院名称</text>
+      </view>
+      <input name='hospitalName' placeholder='请输入' value='{{hospitalName}}'></input>
+    </view>
+    <!--增加医院地址-->
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text>联系人姓名</text>
+      </view>
+      <input name='hospitalContact' placeholder='请输入' value='{{hospitalContact}}'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text>联系电话</text>
+      </view>
+      <input name='hospitalTel' placeholder='请输入' type='number' value='{{hospitalTel}}'></input>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text>故障描述</text>
+      </view>
+      <textarea name='hospitalErrorDescribe' placeholder='请输入' value='{{hospitalErrorDescribe}}'></textarea>
+    </view>
+
+    <view class='section'>
+      <view class='section-title'>
+        <image src='/images/icon/star.png'></image>
+        <text name='expectTime'>上门时间</text>
+      </view>
+      <picker name='expectTime' mode="date" value="{{date}}" start="2015-01-01" end="2030-12-31" bindchange="bindDateChange">
+        <view class="picker" >
+          {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='section'>
+
+      <view id='upload-title'>上传照片(最多上传9张)</view>
+      <image id='uploadButton' src='/images/icon/addImg.png' catchtap='clickUpload'></image>
+      <block wx:for="{{img_arr}}" wx:key="index">
+        
+          <image class='image-info' mode='aspectFit' src='{{item}}'></image>
+        
+      </block>
+      <image class="show-image" mode="aspectFitf" src="{{src}}"></image>
+
+    </view>
+
+    <view class="btn-area">
+      <button id='submitButton' formType="submit">提交</button>
+    </view>
+    <view class="btn-area">
+      <button id='backButton' catchtap='clickBack'>撤销所有内容</button>
+    </view>
+  </form>
+  
+
+
+</view>

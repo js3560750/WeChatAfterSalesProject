@@ -1,0 +1,371 @@
+<!--pages/register/maintainregister/maintainregister.wxml-->
+
+<view class='container'>
+  <form bindsubmit="formSubmit">
+
+    <view class='section'>
+      <text>订单号</text>
+      <input name='orderNumber' disabled='true' placeholder='请输入' value='{{order.orderNumber}}'></input>
+    </view>
+
+    <view class='section'>
+      <text>工程师姓名</text>
+      <input name='engineer' value='{{order.engineer}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>工程师电话</text>
+      <input name='engineerTel' value='{{order.engineerTel}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>订单状态</text>
+      <input name='status' value='{{order.status}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院名称</text>
+      <input name='hospitalName' value='{{order.hospitalName}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院负责人姓名</text>
+      <input name='hospitalContact' value='{{order.hospitalContact}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>医院负责人电话</text>
+      <input name='hospitalTel' value='{{order.hospitalTel}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器型号</text>
+      <input name='productModel' value='{{order.productModel}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>仪器序列号</text>
+      <input name='serialNumber' value='{{order.serialNumber}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>当前标本量统计</text>
+      <input name='currentSampleCount' value='{{order.currentSampleCount}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>标本盒种类</text>
+      <input name='sampleBoxType' value='{{order.sampleBoxType}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>试剂种类</text>
+      <input name='reagentType' value='{{order.reagentType}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>低倍上下</text>
+      <input name='software1' value='{{order.software1}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>低倍左右</text>
+      <input name='software2' value='{{order.software2}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>低倍前后</text>
+      <input name='software3' value='{{order.software3}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>低倍白平衡</text>
+      <input name='software4' value='{{order.software4}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>低倍伽马值</text>
+      <input name='software5' value='{{order.software5}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>低倍曝光值</text>
+      <input name='software6' value='{{order.software6}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>高倍上下</text>
+      <input name='software7' value='{{order.software7}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>高倍左右</text>
+      <input name='software8' value='{{order.software8}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>高倍前后</text>
+      <input name='software9' value='{{order.software9}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>高倍白平衡</text>
+      <input name='software10' value='{{order.software10}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>高倍伽马值</text>
+      <input name='software11' value='{{order.software11}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>高倍曝光值</text>
+      <input name='software12' value='{{order.software12}}' placeholder='请输入'></input>
+    </view>
+
+
+    <view class='section'>
+      <text>镜检红细胞</text>
+      <input name='software13' value='{{order.software13}}' placeholder='请输入'></input>
+    </view>
+
+
+    <view class='section'>
+      <text>镜检白细胞</text>
+      <input name='software14' value='{{order.software14}}' placeholder='请输入'></input>
+    </view>
+
+
+    <view class='section'>
+      <text>镜检虫卵</text>
+      <input name='software15' value='{{order.software15}}' placeholder='请输入'></input>
+    </view>
+
+
+    <view class='section'>
+      <text>镜检结果准确率</text>
+      <input name='software16' value='{{order.software16}}' placeholder='请输入'></input>
+    </view>
+
+
+    <view class='section'>
+      <text>整机测试重新断电开机</text>
+      <input name='machine1' value='{{order.machine1}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>深度冲洗</text>
+      <input name='machine2' value='{{order.machine2}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>备注</text>
+      <input name='remarks' value='{{order.remarks}}' placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <text>是否退货</text>
+      <radio-group name='isReturnPurchase'>
+        <radio class="radio" value="1">是</radio>
+        <radio class="radio" value="0" checked='true'>否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>仪器主机是否处理</text>
+      <radio-group name='isInstrument'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>计算机是否处理</text>
+      <radio-group name='isComputer'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+
+    <view class='section'>
+      <text>显微镜是否处理</text>
+      <radio-group name='isMicroscope'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view><view class='section'>
+      <text>泵阀是否处理</text>
+      <radio-group name='isPump'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>机械臂是否处理</text>
+      <radio-group name='isArm'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>搅拌部分是否处理</text>
+      <radio-group name='isStir'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>金标部分是否处理</text>
+      <radio-group name='isGold'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>送样部分是否处理</text>
+      <radio-group name='isSample'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>计算机视频采集卡驱动是否正常</text>
+      <radio-group name='isComputer1'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>显微镜相机驱动是否正常</text>
+      <radio-group name='isComputer2'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>显微镜焦距是否正常</text>
+      <radio-group name='isMicroscope1'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>显微镜上下左右前后是否正常</text>
+      <radio-group name='isMicroscope2'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>显微镜皮带松紧度是否合适</text>
+      <radio-group name='isMicroscope3'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>摄像头性状图像是否清晰</text>
+      <radio-group name='isCamera1'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>摄像头金标图像是否清晰</text>
+      <radio-group name='isCamera2'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>计数池内是否有异物</text>
+      <radio-group name='isCountpool1'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>计数池通道污点是否清除</text>
+      <radio-group name='isCountpool2'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>计数池表面是否有划痕</text>
+      <radio-group name='isCountpool3'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>取样臂运行是否正常</text>
+      <radio-group name='isArm1'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>取样臂左右前后上下移动是否正常</text>
+      <radio-group name='isArm2'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>取样臂外壁是否干净</text>
+      <radio-group name='isArm3'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>取样臂探入标本盒深度是否合适</text>
+      <radio-group name='isArm4'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>滴样位置是否正确</text>
+      <radio-group name='isLiquid1'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>滴样是否正常</text>
+      <radio-group name='isLiquid2'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>送样传动部件声音是否正常</text>
+      <radio-group name='isSample1'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+    <view class='section'>
+      <text>送样运行是否平稳</text>
+      <radio-group name='isSample2'>
+        <radio class="radio" value="1" checked='true'>是</radio>
+        <radio class="radio" value="0">否</radio>
+      </radio-group>
+    </view>
+  
+    
+
+
+   
+
+    <view class='section'>
+      <text>数据库编号</text>
+      <input name='id' disabled='true' value='{{order.id}}' ></input>
+    </view>
+
+    <view class="btn-area">
+      <button id='submitButton' formType="submit">提交</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/allrepair/allrepair.wxml-->
+<view class='filter'>
+  <view class='filter-section' catchtap='clickSearch'>
+    <image  class='icon' src='/images/icon/repair/search.png'></image>
+    <text>搜索</text>
+  </view>
+  <!-- <view class='filter-section' catchtap='clickFilter'>
+    <image class='icon' src='/images/icon/repair/filter.png'></image>
+    <text>筛选</text>
+  </view> -->
+</view>
+<view class='block-title'>
+  <text>维修工单</text>
+  <text catchtap='clickInstall' style='color:#1E90FF'>安装工单</text>
+  <text catchtap='clickMaintain'style='color:#1E90FF'>保养工单</text>
+</view>
+ <block wx:for="{{repairOrder}}" wx:for-item="item" wx:for-index="index">
+
+    <view class='container'>
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/hospital.png'></image>
+          <view class='section-title'>客户名称</view>
+          <text class='hospitalName'>{{item.hospitalName}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/submitTime.png'></image>
+          <view class='section-title'>提交时间</view>
+          <text class='applyTime'>{{item.applyTime}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/engineerName.png'></image>
+          <view class='section-title'>工程师姓名</view>
+          <text class='engineer'>{{item.engineer}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/status.png'></image>
+          <view class='section-title'>工单状态</view>
+            <text wx:if='{{item.status=="未处理"}}' style='color:red'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="已受理"}}' style='color:#FF7F50'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="进行中"}}' style='color:#00BFFF'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="已完成"}}' style='color:#00FF7F'>{{item.status}}</text>
+        </view>
+
+        <view class='section'>
+          <button class='detail' catchtap='clickDetail' data-id='{{item.id}}'>详情</button>
+          
+          <button  wx:if='{{item.status=="未处理"}}' class='apponitEngineer' catchtap='clickApponitEngineer' data-id='{{item.id}}'>委派工程师</button>
+          <button  wx:elif='{{item.status=="进行中"||item.status=="已受理"}}' class='apponitEngineer' catchtap='clickApponitEngineer' data-id='{{item.id}}'>更改工程师</button>
+        </view>
+    </view>
+
+  </block>
+

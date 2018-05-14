@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <!-- <button catchtap='login'>wx.login</button> -->
+  <form bindsubmit='formSubmit'>
+    <!-- <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 绑定微信账号 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view> -->
+
+    <view class="section">
+      <view class='section-title'>
+        <text>用户名(ROLE_ADMIN权限)</text>
+      </view>
+      <input name='account' placeholder='请输入管理员账号' ></input>
+    </view>
+
+    <view class="section">
+      <view class='section-title'>
+        <text>密码</text>
+      </view>
+      <!--表单要获得input的值，必须给input一个name-->
+      <input name='password' placeholder='请输入管理密码' ></input>
+    </view>
+
+    <view class="btn-area">
+      <button id='submitButton' formType="submit">登录</button>
+    </view>
+  </form>
+</view>

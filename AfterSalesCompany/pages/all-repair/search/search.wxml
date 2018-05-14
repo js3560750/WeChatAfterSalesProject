@@ -1,0 +1,129 @@
+<!--pages/search/search.wxml-->
+<view class='searchContainer'>
+  <image  class='icon' src='/images/icon/repair/search.png'></image> 
+  <input focus='true' bindconfirm='searchResult' placeholder='搜索医院、工程师、工单号'></input>
+  <text class='cancelText' catchtap='clickCancel'>取消</text>
+</view>
+
+
+<block wx:for="{{repairOrder}}" wx:for-item="item" wx:for-index="index">
+<text>维修工单</text>
+    <view class='container'>
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/hospital.png'></image>
+          <view class='section-title'>客户名称</view>
+          <text class='hospitalName'>{{item.hospitalName}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/submitTime.png'></image>
+          <view class='section-title'>提交时间</view>
+          <text class='applyTime'>{{item.applyTime}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/engineerName.png'></image>
+          <view class='section-title'>工程师姓名</view>
+          <text class='engineer'>{{item.engineer}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/status.png'></image>
+          <view class='section-title'>工单状态</view>
+            <text wx:if='{{item.status=="未处理"}}' style='color:red'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="已受理"}}' style='color:#FF7F50'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="进行中"}}' style='color:#00BFFF'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="已完成"}}' style='color:#00FF7F'>{{item.status}}</text>
+        </view>
+
+        <view class='section'>
+          <button class='detail' catchtap='clickRepairDetail' data-id='{{item.id}}'>详情</button>
+          
+          <button  wx:if='{{item.status=="未处理"}}' class='apponitEngineer' catchtap='clickRepairApponitEngineer' data-id='{{item.id}}'>委派工程师</button>
+          <button  wx:elif='{{item.status=="进行中"||item.status=="已受理"}}' class='apponitEngineer' catchtap='clickRepairApponitEngineer' data-id='{{item.id}}'>更改工程师</button>
+        </view>
+    </view>
+
+  </block>
+
+
+
+  <block wx:for="{{maintainOrder}}" wx:for-item="item" wx:for-index="index">
+<text>保养工单</text>
+    <view class='container'>
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/hospital.png'></image>
+          <view class='section-title'>客户名称</view>
+          <text class='hospitalName'>{{item.hospitalName}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/submitTime.png'></image>
+          <view class='section-title'>派单时间</view>
+          <text class='orderTime'>{{item.orderTime}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/engineerName.png'></image>
+          <view class='section-title'>工程师姓名</view>
+          <text class='engineer'>{{item.engineer}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/status.png'></image>
+          <view class='section-title'>工单状态</view>
+            
+            <text wx:if='{{item.status=="已受理"}}' style='color:#FF7F50'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="进行中"}}' style='color:#00BFFF'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="已完成"}}' style='color:#00FF7F'>{{item.status}}</text>
+        </view>
+
+        <view class='section'>
+          <button class='detail' catchtap='clickMaintainDetail' data-id='{{item.id}}'>详情</button>
+          
+          <button  wx:if='{{item.status=="未处理"}}' class='apponitEngineer' catchtap='clickMaintainApponitEngineer' data-id='{{item.id}}'>委派工程师</button>
+          <button  wx:elif='{{item.status=="进行中"||item.status=="已受理"}}' class='apponitEngineer' catchtap='clickMaintainApponitEngineer' data-id='{{item.id}}'>更改工程师</button>
+        </view>
+    </view>
+
+  </block>
+
+
+
+  <block wx:for="{{installOrder}}" wx:for-item="item" wx:for-index="index">
+<text>安装工单</text>
+    <view class='container'>
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/hospital.png'></image>
+          <view class='section-title'>客户名称</view>
+          <text class='hospitalName'>{{item.hospitalName}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/submitTime.png'></image>
+          <view class='section-title'>派单时间</view>
+          <text class='orderTime'>{{item.orderTime}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/engineerName.png'></image>
+          <view class='section-title'>工程师姓名</view>
+          <text class='engineer'>{{item.engineer}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/repair/status.png'></image>
+          <view class='section-title'>工单状态</view>
+            <text wx:if='{{item.status=="已受理"}}' style='color:#FF7F50'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="进行中"}}' style='color:#00BFFF'>{{item.status}}</text>
+            <text wx:elif='{{item.status=="已完成"}}' style='color:#00FF7F'>{{item.status}}</text>
+        </view>
+
+        <view class='section'>
+          <button class='detail' catchtap='clickInstallDetail' data-id='{{item.id}}'>详情</button>
+          <button class='apponitEngineer' catchtap='clickInstallApponitEngineer' data-id='{{item.id}}'>更改工程师</button>
+        </view>
+    </view>
+
+  </block>
+

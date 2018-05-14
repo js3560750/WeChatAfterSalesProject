@@ -1,0 +1,42 @@
+<!--pages/client/myrepair/myrepair.wxml-->
+<block wx:for="{{myRepair}}" wx:for-item="item" wx:for-index="index">
+    <view class='container'>
+      <view class='section'>
+        <image class='icon' src='/images/icon/myRepair/num.png'></image>
+        <view class='section-title'>工单号</view>
+        <text class='orderNumber'>{{item.orderNumber}}</text>
+      </view>
+
+        <view class='section' >
+          <image class='icon' src='/images/icon/myRepair/acceptTime.png' ></image>
+          <view class='section-title'>被受理时间</view>
+          <text class='dealTime'>{{item.dealTime}}</text>
+        </view>
+
+        <view class='section' >
+          <image class='icon' src='/images/icon/myRepair/num.png' ></image>
+          <view class='section-title'>订单状态</view>
+          <text class='status'>{{item.status}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/engineerName.png'></image>
+          <view class='section-title'>工程师姓名</view>
+          <text class='engineer'>{{item.engineer}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/engineerTel.png'></image>
+          <view class='section-title'>工程师电话</view>
+          <text class='engineerTel'>{{item.engineerTel}}</text>
+        </view>
+
+        <view class='section'>
+          <image class='icon' src='/images/icon/myRepair/arrivalTime.png'></image>
+          <view class='section-title'>预计到达</view>
+          <text class='arrivalTime'>{{item.estimatedArrivalTime}}</text>
+        </view>
+     
+      
+    </view>
+  </block>

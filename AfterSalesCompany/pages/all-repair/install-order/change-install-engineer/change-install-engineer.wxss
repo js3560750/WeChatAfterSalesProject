@@ -1,0 +1,48 @@
+/* pages/all-repair/install-order/change-install-engineer/change-install-engineer.wxss */
+page{
+  background-color: 	#F5F5F5;
+}
+
+.container{
+  margin: 10px 20rpx 10px 20rpx;
+  padding: 10px  0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+form{
+  width:100%;
+}
+.section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  margin-left: 10rpx;
+  margin-right: 40rpx;
+  height: 30px;
+  width: 30px;
+}
+
+.section-title{
+  width: 250rpx;
+  margin-right: 40rpx;
+  height: 30px;
+  line-height: 30px;
+}
+
+picker{
+  margin-left: 10rpx;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+button{
+  height: 30px;
+  line-height: 30px;
+  background-color: 	#1E90FF;
+  color: white;
+}
